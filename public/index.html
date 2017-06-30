@@ -4,30 +4,29 @@
 	<title>Exco 1 ECS6</title>
 </head>
 <body>
-	<form>
+	<div>
 		<label>Entrez votre prénom</label>
-		<input type="text" id="firstName" value =""></>
+		<input type="text" style="uppercase" id="firstName" value =""></>
 		<button type='button' id="valid" >validez</button>
-		<hr>
-		<div id="reponse"></div>
-
-	</form>
+	</div>
 	<hr>
-	<form>
+	<div id="reponse"></div>
+
+
+	<hr>
+	<div>
 		<label>Rechercher</label>
-		<input type="text" id="abc" value ="" ></>
+		<input type="text"  maxlength="3" id="abc" value ="" ></>
 		<button type='button' id="search" value = 'rechercher'>Search</button>
 		<hr>	
-	</form>
-	<h2>Liste des prénoms</h2>
-	<table id="tableau" border="1"  >
-	</table>
-	<hr>
-	<h2>Prénoms triés</h2>
-	<table id="newtableau" border="1"  >
 
-	</table>
-
+		<h2>Liste des prénoms</h2>
+		<table id="tableau" border="1"  >
+		</table>
+		<hr>
+		<h2>Prénoms triés</h2>
+		<h3 id='tri'></h3>
+	</div>
 	<script type="text/javascript" src= "app.js"></script>
 
 </body>
